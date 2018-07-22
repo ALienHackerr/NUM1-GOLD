@@ -1,0 +1,10 @@
+#define whx 3000
+#define wh 2000
+#define hfx 1500
+#define hf 1000
+#define qtx 750
+#define qt 500
+#define etx 375
+#define et 250
+#define stx 187
+#define st 125

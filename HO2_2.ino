@@ -20,6 +20,8 @@ void loop() {
   if(ir.decode(0)){
     
     unsigned int res=reso.value;
+    lcd.clear();
+    lcd.setCursor(6,0);
     switch(res){
       
       case 26775:
@@ -58,10 +60,8 @@ void loop() {
       
     }
     
-    ir.resume();
     delay(1000);
-    lcd.clear();
-    lcd.setCursor(6,0);
+    ir.resume();
     
   }
   

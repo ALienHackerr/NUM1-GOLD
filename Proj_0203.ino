@@ -93,7 +93,7 @@ void loop() {
     
     unsigned int res = reso.value;
     
-    if(res==30879){
+    if(res==6375){
       //move forward
       lcd.setCursor(1,0);
       lcd.print("Moving forward");
@@ -108,7 +108,7 @@ void loop() {
       
     }
      
-    if(res==5890){
+    if(res==4335){
       //turn left
       lcd.setCursor(2,0);
       lcd.print("Turning left");
@@ -124,7 +124,7 @@ void loop() {
       
     }
     
-    if(res==47939){
+    if(res==23205){
       //turn right
       lcd.setCursor(2,0);
       lcd.print("Turning right");
@@ -140,7 +140,7 @@ void loop() {
       
     }
       
-    if(res==16030){
+    if(res==19125){
       //move back
       lcd.setCursor(1,0);
       lcd.print("Moving backward");

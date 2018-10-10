@@ -95,21 +95,19 @@ void loop() {
     
     if(res==6375){
       //move forward
+      lcd.clear();
       lcd.setCursor(1,0);
       lcd.print("Moving forward");
       lcd.setCursor(7,1);
       lcd.write(1);
       digitalWrite(LF,HIGH);
       digitalWrite(RF,HIGH);
-      delay(2000);
-      lcd.clear();
-      digitalWrite(LF,LOW);
-      digitalWrite(RF,LOW);
       
     }
      
     if(res==4335){
       //turn left
+      lcd.clear();
       lcd.setCursor(2,0);
       lcd.print("Turning left");
       lcd.setCursor(7,1);
@@ -117,15 +115,12 @@ void loop() {
       lcd.write(5);
       digitalWrite(LB,HIGH);
       digitalWrite(RF,HIGH);
-      delay(430);
-      lcd.clear();
-      digitalWrite(LB,LOW);
-      digitalWrite(RF,LOW);
       
     }
     
     if(res==23205){
       //turn right
+      lcd.clear();
       lcd.setCursor(2,0);
       lcd.print("Turning right");
       lcd.setCursor(7,1);
@@ -133,25 +128,33 @@ void loop() {
       lcd.write(4);
       digitalWrite(LF,HIGH);
       digitalWrite(RB,HIGH);
-      delay(430);
-      lcd.clear();
-      digitalWrite(LF,LOW);
-      digitalWrite(RB,LOW);
       
     }
       
     if(res==19125){
       //move back
+      lcd.clear();
       lcd.setCursor(1,0);
       lcd.print("Moving backward");
       lcd.setCursor(7,1);
       lcd.write(2);
       digitalWrite(LB,HIGH);
       digitalWrite(RB,HIGH);
-      delay(2000);
+      
+    }
+    if(res==14535){
+      
       lcd.clear();
+      lcd.setCursor(4,0);
+      lcd.print("Stopping");
+      digitalWrite(LF,LOW);
       digitalWrite(LB,LOW);
+      digitalWrite(RF,LOW);
       digitalWrite(RB,LOW);
+      delay(100);
+      lcd.clear();
+      lcd.setCursor(4,0);
+      lcd.print("Stopped");
       
     }
     ir.resume();

@@ -1,0 +1,188 @@
+import java.util.Scanner ;
+class Proj {
+    public static void main(String[] args) {
+    String name ;
+    int choice ;
+    int seatnum ;
+    int priceseat ;
+    int choice2 ;
+    int choice3 ;
+    int slurpee ;
+    int nuggets ;
+    int cola ;
+    int slurpeep ;
+    int nuggetsp ;
+    int colap ;
+    int totalp;
+    System.out.println("---WARNING BEFORE RUNNING THE PROGRAM MAKE SURE THAT THE GENERAL OUTPUT DISPLAY IS ENLARGED---") ;
+    System.out.println("Welcome to the Pierce The Veil Concert!May we ask what your name is?") ;   
+    System.out.print("Hi I Am:") ;
+    Scanner asdf = new Scanner (System.in) ;
+    name = asdf.nextLine() ;
+    System.out.println("Hello " +name+ "!Welcome to the Pierce The Veil Concert!\n") ;
+    System.out.println("Would you like to continue? ") ;
+    System.out.println("[1]YES");
+    System.out.println("[2]NO");
+    System.out.print("Choice: ");
+    choice = asdf.nextInt();
+    System.out.print("\n");
+    
+    if(choice == 1) {
+    
+    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||") ;
+    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||") ;
+    System.out.println("||`   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `||") ;
+    System.out.println("||  `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `  ||") ;
+    System.out.println("||`   `   `   `   `   `   `   `   `   STAGE   `   `   `   `   `   `   `   `   `||") ;
+    System.out.println("||  `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `  ||") ;
+    System.out.println("||`   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `   `||") ;
+    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||") ;
+    System.out.println("|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||") ;
+    System.out.println("                                    VIP SEATS                                    ") ;
+    System.out.println("                                                                                 ") ;
+    System.out.println(" [A] [B] [C] [D] [E] [F] [G] [H] [I] [J] [K] [L] [M] [N] [O] [P] [Q] [R] [S] [T] ") ;
+    System.out.println("                                                                                 ") ;
+    System.out.println(" [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [_] [X] [_] [X] [X] [1] ") ;
+    System.out.println(" [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [2] ") ;
+    System.out.println("                                                                                 ") ;
+    System.out.println("                                  REGULAR  SEATS                                 ") ;
+    System.out.println("                                                                                 ") ;
+    System.out.println(" [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [_] [X] [X] [X] [X] [3] ") ;
+    System.out.println(" [X] [X] [X] [X] [X] [X] [X] [_] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [4] ") ;
+    System.out.println(" [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [X] [5] ") ;
+    System.out.println("                                                                                 ") ;
+    System.out.println("Please Select The Seat You Want") ;
+    System.out.println("Its Price Will Be Displayed Beside The seat Number") ;
+    System.out.println("The Seat Plan Will Be Displayed Above This Text^^^") ;
+    System.out.println("[1]P1[VIP] Php:5000") ;
+    System.out.println("[2]R1[VIP] Php:5000") ;
+    System.out.println("[3]H4 Php:500") ;
+    System.out.println("[4]P3 Php:500") ;
+    System.out.println("[5]DISCONTINUE") ;
+    seatnum = asdf.nextInt() ;
+    if(seatnum == 1){
+    priceseat = 5000 ;	
+    System.out.println("Great! You Selected Seat P1") ;	
+    System.out.println("Would You Like To Confirm?") ;
+    System.out.println("[1]Yes") ;
+    System.out.println("[2]No") ;
+    choice2 = asdf.nextInt() ;	
+    if(choice2 == 1){
+    System.out.println("Great! Now Lets Get You Some Foods") ;
+    System.out.println("Would You Like To Order Some Foods?") ;	
+    System.out.println("[1]Yes") ;
+    System.out.println("[2]No") ;
+    choice3 = asdf.nextInt() ;
+    if(choice3 == 1){
+    System.out.println("Great!We Will Show You The List Of Foods And Please Enter The Number On How Many You Want.") ;
+    System.out.print("Slurpee [Php 50]  x ") ;
+    slurpee = asdf.nextInt() ;
+    System.out.print("Nuggets [Php 100] x ") ;
+    nuggets = asdf.nextInt() ;
+    System.out.print("Cola    [Php 20]  x ") ;
+    cola = asdf.nextInt() ;	
+    slurpeep = 50 * slurpee ;
+    nuggetsp = 100 * nuggets ;
+    colap = 20 * cola ;
+    totalp = slurpeep + nuggetsp + colap + priceseat ;
+    System.out.println("        RECIEPT        ") ;	
+    System.out.println("-----------------------") ;
+    System.out.println("Ticket   x  1  ["+priceseat+"]") ;
+    System.out.println("Slurpee  x  "+slurpee+  "  ["+slurpeep+"]") ;
+    System.out.println("Nuggets  x  "+nuggets+  "  ["+nuggetsp+"]") ;
+    System.out.println("Cola     x  "+cola+  "  ["+colap+"]") ;
+    System.out.println("        Total:"+totalp) ;
+
+   				
+    }
+    else{
+    
+    //super end na
+    
+    }	
+    }
+    else if(choice2==2){
+    	
+    	System.out.println("Okay!Here's your receipt:");
+    	System.out.println("        RECIEPT        ");
+    	System.out.println("-----------------------");
+    	System.out.println("Okay!Here's your receipt:");
+    	System.out.println("Okay!Here's your receipt:");
+    	System.out.println("Okay!Here's your receipt:");
+    	
+    	
+    	}
+    	
+    else{
+    System.out.println("SYSTEM RESTARTING");
+    System.out.println("PLEASE COME AGAIN")	;	
+    }	
+    }
+    /*else if(seatnum == 2){
+    priceseat = 5000 ;	
+    System.out.println("Great! You Selected Seat R1") ;	
+    System.out.println("Would You Like To Confirm?") ;
+    System.out.println("[1]Yes") ;
+    System.out.println("[2]No") ;
+    choice2 = asdf.nextInt() ;	
+    if(choice2 == 1){
+    System.out.println("Great! Now Lets Get You Some Foods") ;	
+    }	
+    else{
+    System.out.println("SYSTEM RESTARTING");
+    System.out.println("PLEASE COME AGAIN")	;	
+    }	
+    }
+    else if(seatnum == 3){
+    priceseat = 500 ;	
+    System.out.println("Great! You Selected Seat H4") ;
+    System.out.println("Would You Like To Confirm?") ;
+    System.out.println("[1]Yes") ;
+    System.out.println("[2]No") ;
+    choice2 = asdf.nextInt() ;	
+    if(choice2 == 1){
+    System.out.println("Great! Now Lets Get You Some Foods") ;	
+    }	
+    else{
+    System.out.println("SYSTEM RESTARTING");
+    System.out.println("PLEASE COME AGAIN")	;	
+    }	
+    }
+    else if(seatnum == 4){
+    priceseat = 500 ;	
+    System.out.println("Great! You Selected Seat P3") ;
+    System.out.println("Would You Like To Confirm?") ;
+    System.out.println("[1]Yes") ;
+    System.out.println("[2]No") ;
+    choice2 = asdf.nextInt() ;	
+    if(choice2 == 1){
+    System.out.println("Great! Now Lets Get You Some Foods") ;	
+    }	
+    else{
+    System.out.println("SYSTEM RESTARTING");
+    System.out.println("PLEASE COME AGAIN")	;	
+    }	
+    }
+    else {
+    System.out.println("SYSTEM RESTARTING");
+    System.out.println("PLEASE COME AGAIN");		
+    }*/
+    }
+    else if(choice == 2){
+    System.out.println("THANK YOU FOR USING THE PROGRAM");
+    System.out.println("PLEASE COME AGAIN");
+    System.out.println("SYSTEM RESTARTING");	
+    	
+    	
+    }
+    
+    else{
+    System.out.println("Sorry Thats An Invalid Code") ;	
+    System.out.println("Please Try Again") ;		
+    }
+
+
+
+}
+
+}
